@@ -1,0 +1,49 @@
+<safemode>
+
+<modetype type="single">
+<mode>
+<if>
+<sensor inp1="nil" inp2="nil"..........inpnplusm="nil">
+<actuator out1="default1" out2="default2".......outn="defaultn">
+</if>
+<elseif>
+<sensor inppulse1="val_hilo1" inppulse2="val_hilo2" ......inpulsem="val_hilom" "lowthresh1"<inprange1<"upthresh1" "lowthresh2"<inprange2<"upthresh2" ---------- "lowthreshn"<inprangen<"upthreshn">
+<actuator out1="value1" out2="value2".......outk="valuek">
+</elseif>
+<elseif>
+</elseif>
+................................
+<else>
+<actuator out1="default1" out2="default2".......outk="defaultk">
+</else>
+</mode>
+</modetype>
+
+<modetype type="multi">
+<mode modeno="1" modeval="val1">
+<if>
+<sensor inp1="nil" inp2="nil"..........inpn="nil">
+<actuator out1="default1" out2="default2".......outn="defaultn">
+</if>
+<elseif>
+<sensor "lowthresh1"<inp1<"upthresh1" "lowthresh2"<inp2<"upthresh2" ---------- "lowthreshn"<inpn<"upthreshn">
+<actuator out1="value1" out2="value2".......outn="valuen">
+</elseif>
+<elseif>
+.......
+</elseif>
+................................
+<else>
+<actuator out1="default1" out2="default2".......outn="defaultn">
+</else>
+</mode>
+<mode modeno="2" modeval="val2">
+...........
+</mode>
+................
+<mode modeno="n" modeval="valn">
+...........
+</mode>
+</modetype>
+
+</safemode>
